@@ -1,0 +1,35 @@
+//variables
+@color1: blue;
+@color2: green;
+@border: 2px solid @color2;
+@stringVar:"My ";
+
+//mixins
+.radius(@radius) {
+    webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.commonRules {
+  border: @border;
+  .radius(10px);
+}
+header {
+  p {
+    &:before {
+    content: @stringVar;
+    }
+  }
+}
+li {
+    color: @color1;
+    border: @border;
+    .commonRules;
+}
+
+h2 {
+  color: @color2;
+  .commonRules;
+}
+
+
