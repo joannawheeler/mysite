@@ -1,0 +1,1 @@
+//create a jquery function that when a certain id's css's atribute gets set to a certain value, then
